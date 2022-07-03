@@ -28,15 +28,48 @@
       </div>
     </div>
     <div class="play-buttons">
-      <div class="paper btn">
-        <img src="images/icon-paper.svg" alt="Paper">
+      <div class="paper-button button">
+        <div class="paper btn">
+          <img src="images/icon-paper.svg" alt="Paper" onclick="pickUserButton('paper')">
+        </div>
       </div>
-      <div class="scissors btn">
-        <img src="images/icon-scissors.svg" alt="Scissors">
+      <div class="scissors-button button">
+        <div class="scissors btn">
+          <img src="images/icon-scissors.svg" alt="Scissors" onclick="pickUserButton('scissors')">
+        </div>
       </div>
-      <div class="rock btn">
-        <img src="images/icon-rock.svg" alt="Rock">
+      <div class="rock-button button">
+        <div class="rock btn">
+          <img src="images/icon-rock.svg" alt="Rock" onclick="pickUserButton('rock')">
+        </div>
       </div>
+    </div>
+
+    <div class="contest">
+      <div class="user">
+
+      </div>
+      <div class="result">
+        <p id="result">You Won</p>
+        <span onclick="playAgain()">Play again</span>
+      </div>
+      <div class="house">
+
+      </div>
+    </div>
+
+    <div class="rules-btn">
+      <div onclick="modalOpener()" class="rules">Rules</div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p>Rules</p>
+        <img src="images/image-rules.svg" alt="rules">
+        <span onclick="modalCloser()" class="close"><img src="images/icon-close.svg" alt="close"></span>
+
+      </div>
+
     </div>
   </div>
 
